@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Les base de données</title>
+</head>
+<body>
+
+<h1>Les bases de données</h1>
+
+<p>Je veux vous partager ici ma passion pour ces outils indispensable pour tout site web qui se respecte.</p>
+<img src="https://user.oc-static.com/files/59001_60000/59541.png" alt="chargement en cours" />
+<p> </p>
+<a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/presentation-des-bases-de-donnees-2"> Source de l'image : OpenClassrooms</a>
+<p> Pour trouver cette image j'ai utilisé un moteur de recherche (Google) dans lequel j'ai renter "base de donnée web". Parmis les sites proposés il y avait celui d'open classrooms (source fiable et reconnue). J'ai donc récupérer le lien de l'image pour pouvoir l'afficher ici. </p>
+
+<style> img
+{
+ border: solid 4px black;
+} </style>
+
+<! Grâce à la balise style je viens de triater la partie II.2 en mettant un cadre noir autour de ma photo>
+
+
+
+<label for="note">Note (/5) :</label>
+<span class="required" style="color:red">(obligatoire)<span>
+<input type="text" id="note" required="required" name="user_name" size="3" value="note" style="backgroud-color:white; color:#bbb" onfocus="this.value= ''; this.style.color='#000';" />
+
+<script type="text/javascript">
+
+	function Valider() {
+    	var note = document.getElementById('note');
+		if (note.value<0 or note.value>5) 
+        {alert("La note doit être comprise entre 0 et 5")}
+        else {
+           alert("formulaire validé.\n Pour valider un formulaire : note.submit()");
+        }
+     }
+</script>
+
+<input type="button" value="Valider le formulaire" onclick="Valider();" />
+
+<! J'ai pas réussi à traité completement la question II.3>
+
+<p></p>
+<p style="color:black">Voici un forum parlant des bases de données pour le web.</p>
+<iframe src="https://www.developpez.net/forums/d285312/php/langage/creer-application-base-donnees-web/" 
+     width="1000" 
+     height="800" 
+     style="border:2px solid black">
+</iframe> 
+
+<! J'ai traité la question II.4>
+</body>
+</html>
