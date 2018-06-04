@@ -30,7 +30,7 @@
 
 	function Valider() {
     	var note = document.getElementById('note');
-		if (note.value<0 or note.value>5) 
+		if ((note.value<0) || (note.value>5)) 
         {alert("La note doit être comprise entre 0 et 5")}
         else {
            alert("formulaire validé.\n Pour valider un formulaire : note.submit()");
@@ -40,7 +40,7 @@
 
 <input type="button" value="Valider le formulaire" onclick="Valider();" />
 
-<! J'ai pas réussi à traité completement la question II.3>
+<! J'ai réussi à traité la question II.3>
 
 </body>
 </html>
