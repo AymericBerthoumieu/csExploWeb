@@ -33,14 +33,21 @@
 		if ((note.value<0) || (note.value>5)) 
         {alert("La note doit être comprise entre 0 et 5")}
         else {
-           alert("formulaire validé.\n Pour valider un formulaire : note.submit()");
+           	alert("Formulaire validé.\n Vous pouvez cliquer sur envoyer.");
         }
      }
+     
+     function Sub() {
+     	var note = document.getElementById('note');
+  		note.submit();
+        }
+        
 </script>
 
-<input type="button" value="Valider le formulaire" onclick="Valider();" />
 
-<! J'ai traité la question II.3>
+<input type="button" value="Valider le formulaire" onclick="Valider();" />
+<input type="button" value="Envoyer" onclick="Sub();" />
+<! J'ai traité la question II.3 pour que Envoyer fonctionne il faut se connecter à une base de données>
 
 <p></p>
 <p style="color:black">Voici un forum parlant des bases de données pour le web.</p>
